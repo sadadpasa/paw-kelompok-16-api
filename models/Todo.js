@@ -1,17 +1,18 @@
 const mongoose = require('mongoose')
 
 const Note = mongoose.Schema({
-    title: {
-        type: String,
-        required: true,
-    },
     desc: {
-        type: String,
-        required: true
+        type: String
     },
-    finish: {
+    responsible: {
+        type: String
+    },
+    priority: {
+        type: String
+    },
+    completed: {
         type: Boolean,
-        default: false,
+        default: false
     },
     createdAt: {
         type: Date
